@@ -1,0 +1,221 @@
+* { html {
+    scroll-behavior: smooth;
+}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+
+button {
+    background: Gold;
+    color: black;
+    border: none;
+    padding: 15px 35px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+.about,
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.services p {
+    background: #222;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #aaa;
+}
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+
+    header h2 {
+        font-size: 22px;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+}nav {
+    margin-top: 15px;
+}
+
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+
+nav a:hover {
+
+    color: gold;
+
+} form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+
+    border-radius: 8px;
+    border: none;
+
+}
+
+
+textarea {
+
+    height: 120px;
+
+}
+
+
+form button {
+
+    width: 100%;
+
+}.cards {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+
+    background: #222;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.card h3 {
+
+    color: gold;
+    margin-bottom: 15px;
+
+} .hero {
+
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
+
+.hero h1 {
+
+    background: linear-gradient(to right, gold, white);
+    -webkit-background-clip: text;
+    color: transparent;
+
+} .hero-content,
+.card,
+.about {
+    animation: fadeIn 1s ease;
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
